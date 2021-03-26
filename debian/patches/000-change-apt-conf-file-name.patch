@@ -1,0 +1,6 @@
+Author: Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>
+
+--- /dev/null
++++ apt-btrfs-snapshot-3.5.4/data/9999btrfs-snapshot
+@@ -0,0 +1 @@
++DPkg::Pre-Invoke {"if [ -x /usr/bin/apt-btrfs-snapshot ] && apt-btrfs-snapshot supported; then apt-btrfs-snapshot snapshot; fi "; };
