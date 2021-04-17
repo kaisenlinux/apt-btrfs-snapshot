@@ -14,7 +14,7 @@ if ! /usr/bin/apt-btrfs-snapshot list > /dev/null  2>&1; then
 fi
 
 # allow the user to set MaxAge (in days)
-MaxAge=30
+MaxAge=15
 eval $(apt-config shell MaxAge APT::Snapshots::MaxAge)
 
 # delete old snapshots
